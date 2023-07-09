@@ -4,7 +4,7 @@
 read -p "Enter the new SSH port: " new_port
 
 # Update the SSH configuration file
-sed -i "s/^Port.*/Port $new_port/" /etc/ssh/sshd_config
+sed -i "s/^#Port.*/Port $new_port/" /etc/ssh/sshd_config
 
 # Restart the SSH service
 service sshd restart
