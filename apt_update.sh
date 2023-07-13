@@ -4,6 +4,8 @@ echo "This script updates your package manager,
 Upgrades the packages,
 And reboots the system if the kernel was also upgraded. ✅"
 
+sleep 3
+
 current_kernel=$(uname -r)
 
 apt update
