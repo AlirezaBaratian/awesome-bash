@@ -18,6 +18,9 @@ tar -xzvf 7.1.0.tar.gz
 cd neofetch-7.1.0
 make install
 
+cd ..
+rm -rf 7.1.0.tar.gz neofetch-7.1.0 
+
 echo "Neofetch is installed on your machine,
 Here is a preview:"
 sleep 2
