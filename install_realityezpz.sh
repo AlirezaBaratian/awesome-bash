@@ -9,4 +9,5 @@ cd /tmp/reality-ezpz/
 chmod +x reality-ezpz.sh
 ./reality-ezpz.sh
 
+cp reality-ezpz.sh /opt/reality-ezpz
 rm -rf /tmp/reality-ezpz/
