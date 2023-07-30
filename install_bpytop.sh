@@ -4,6 +4,6 @@ clear
 echo "Installing bpytop 🖥"
 
 apt update
-apt install python3-pip python3-venv
+apt install -y python3-pip python3-venv
 
 pip install -U bpytop
