@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 clear
-echo"🔧 Installing the latest version of nginx mainline on your debian-based server..."
+echo"🔧 Installing the latest version of nginx mainline on your Ubuntu server..."
 
 # Install the prerequisites:
 sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
