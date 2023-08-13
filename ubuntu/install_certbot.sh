@@ -1,4 +1,4 @@
-#!/usr/vin/env bash
+#!/usr/bin/env bash
 
 clear
 echo "🤖 Installing certbot via apt on your Ubuntu machine..."
