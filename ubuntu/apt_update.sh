@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 clear
-echo "This script updates your package manager,
+echo "🔄 This script updates your package manager,
 Upgrades the packages,
-And reboots the system if the kernel was also upgraded. ✅"
+And reboots the system if the kernel was also upgraded."
 
 sleep 3
 
