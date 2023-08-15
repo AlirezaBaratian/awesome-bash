@@ -4,7 +4,10 @@
 sudo apt update
 sudo apt install -y jq
 
-API_KEY="c6196ea7f4de458883faec7cb4354a06"
+clear
+
+# Load environment variables
+source .env
 
 # Get the current IP address of the system
 IP_ADDRESS=$(curl -s ifconfig.me)
