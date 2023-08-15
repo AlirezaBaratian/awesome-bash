@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Install jq
+sudo apt update
+sudo apt install -y jq
+
 API_KEY="c6196ea7f4de458883faec7cb4354a06"
 
 # Get the current IP address of the system
