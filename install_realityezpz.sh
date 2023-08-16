@@ -13,4 +13,4 @@ cp reality-ezpz.sh /opt/reality-ezpz
 rm -rf /tmp/reality-ezpz/
 
 echo "REALITY-EZPZ has been installed!
-you can manage it using /opt/reality-ezpz/reality-ezpz.sh"
+you can manage it using /opt/reality-ezpz/reality-ezpz.sh -m"
