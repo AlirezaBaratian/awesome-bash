@@ -13,7 +13,7 @@ source .env
 IP_ADDRESS=$(curl -s ifconfig.me)
 
 # API endpoint
-API_URL="https://api.ipgeolocation.io/ipgeo?apiKey=${API_KEY}&ip=${IP_ADDRESS}"
+API_URL="https://api.ipgeolocation.io/ipgeo?apiKey=${IPGEOLOCATION_API_KEY}&ip=${IP_ADDRESS}"
 
 # Make the API request and store the response in a variable
 response=$(curl -s "$API_URL")
