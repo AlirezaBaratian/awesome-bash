@@ -8,7 +8,7 @@ sleep 3
 curl -L "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz" -o "/opt/nvim-linux64.tar.gz"
 
 # Extract files and remove the archive
-tar xvzf "/opt/nvim-linux64.tar.gz"
+tar xvzf "/opt/nvim-linux64.tar.gz" "/opt/nvim-linux64"
 rm "/opt/nvim-linux64.tar.gz"
 
 # Link the executable binary to /usr/local/bin
