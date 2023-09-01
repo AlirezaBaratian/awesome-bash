@@ -12,5 +12,8 @@ chmod +x reality-ezpz.sh
 cp reality-ezpz.sh /opt/reality-ezpz
 rm -rf /tmp/reality-ezpz/
 
+# Install by linking the script on /usr/local/bin
+ln -s /opt/reality-ezpz/reality-ezpz.sh /usr/local/bin/realityezpz
+
 # Run the script for further management
  /opt/reality-ezpz/reality-ezpz.sh -m
