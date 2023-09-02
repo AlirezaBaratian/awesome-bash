@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+clear
+echo "✂️ Random string generator"
+
 # Prompt the user for the length of the random string
 read -p "Enter the length of the random string: " length
 
