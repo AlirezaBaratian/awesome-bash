@@ -3,6 +3,6 @@
 clear
 echo "🐠 Installing fish shell..."
 
-sudo apt-add-repository ppa:fish-shell/release-3
-sudo apt update
+sudo apt-add-repository ppa:fish-shell/release-3 -y
+sudo apt update -y
 sudo apt install fish
