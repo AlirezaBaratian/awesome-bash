@@ -2,8 +2,13 @@
 
 echo "We are about to backup current state of the MongoDB database"
 sleep 1
-mongodump
+
+backup_dir="/var/lib/mongodb_backup/"
 backup_filename="mongodb_backup_$(date +%Y%m%d).tar.xz"
-tar -cvJf "$backup_filename" "dump/"
-rm -rf "dump/"
+
+mkdir -p $backup_dir
+mongodump "$backup_dir/dum/"
+tar -cvJf "$backup_filename" "$backup_dir/dump/"
+rm -rf "$backup_dir/dump/"
+
 echo "Done ✅"
