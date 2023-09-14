@@ -18,4 +18,5 @@ curl -fsSL https://get.docker.com | sh
 docker compose up -d
 
 # View the node cert
+sleep 3
 cat /var/lib/marzban-node/ssl_cert.pem
