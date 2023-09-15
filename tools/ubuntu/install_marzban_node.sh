@@ -20,6 +20,8 @@ install() {
 
     # View the node cert
     sleep 3
+    clear
+    echo "Successfully installed Marzban-node. Copy the cert for the main panel setup:"
     sudo cat /var/lib/marzban-node/ssl_cert.pem
 
 }
