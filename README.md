@@ -1,1 +1,3 @@
-# A Repositrory for Automating All the Tasks I Do Every Day.
+# awesome-bash
+- A repository filled with scripts for automating a SysAdmin daily tasks.
+- Alongside some practice files for myself.
