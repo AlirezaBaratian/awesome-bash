@@ -16,3 +16,5 @@ Here is the result:
 
 # Show ssh daemon status
 service sshd status
+
+echo "✅ Changed ssh port to $new_port"

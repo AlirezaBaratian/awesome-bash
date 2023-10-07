@@ -25,3 +25,5 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 # Install nginx itself
 sudo apt update
 sudo apt install nginx
+
+echo "✅ Successfully installed nginx on your server."
