@@ -53,3 +53,6 @@ setup_wgcf() {
     }
     "  
 }
+
+install_wgcf()
+setup_wgcf()
