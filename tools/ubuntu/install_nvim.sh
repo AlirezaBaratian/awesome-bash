@@ -5,4 +5,4 @@ echo "📗 Installing nvim..."
 sleep 3
 
 apt update
-apt install -y nvim
+apt install -y neovim
