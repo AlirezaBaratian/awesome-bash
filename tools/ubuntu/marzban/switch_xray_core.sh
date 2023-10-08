@@ -20,7 +20,7 @@ rm Xray-linux-64.zip
 # Switch Xray core in environemt variables
 env_path="/opt/marzban/.env"
 search="# XRAY_EXECUTABLE_PATH ="
-new_line="XRAY_EXECUTABLE_PATH = \"/var/lib/marzban/xray-core/xray\""
+new_line="XRAY_EXECUTABLE_PATH = \"\/var\/lib\/marzban\/xray-core\/xray\""
 
 sed -i "s/$search/$new_line/g" "$env_path"
 
