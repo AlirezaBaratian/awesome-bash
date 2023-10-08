@@ -22,4 +22,4 @@ env_path="/opt/marzban/.env"
 echo 'XRAY_EXECUTABLE_PATH = "/var/lib/marzban/xray-core/xray"' >> "$env_path"
 
 # Restart marzban
-marzban restart
+marzban restart 
