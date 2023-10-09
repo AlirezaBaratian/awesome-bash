@@ -26,4 +26,9 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 sudo apt update
 sudo apt install nginx
 
+# Setup nginx
+systemctl start nginx
+systemctl enable nginx
+
 echo "✅ Successfully installed nginx on your server."
+systemctl status nginx
