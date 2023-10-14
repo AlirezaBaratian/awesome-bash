@@ -10,7 +10,7 @@ restart() {
     docker compose down
     docker compose up -d
 
-    echo "✅ Successfully restarted Marzban-node
+    echo "✅ Successfully restarted Marzban-node"
 }
 
 restart
