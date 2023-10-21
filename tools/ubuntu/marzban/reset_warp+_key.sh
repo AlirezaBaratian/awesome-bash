@@ -21,7 +21,7 @@ reset_key() {
 
     secret_key=$(grep "$search_pattern" "$config_file") | cut -d= -f2 | cut -d" " -f2
 
-    old_pattern="\"secretKey\": \""
+    old_pattern="\"secretKey\": "
     new_line="\"secretKey\": \"$secret_key\""
     config_file="/var/lib/marzban/xray_config.json"
 
