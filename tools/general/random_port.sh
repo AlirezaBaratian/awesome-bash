@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [$$1 && $2]; then
+if [$1 && $2]; then
     min=$1
     max=$2
 else
