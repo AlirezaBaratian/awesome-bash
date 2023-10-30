@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-if [$# -eq 0]; then
-    min=$1
-    max=$2
-else
+if [ $# -eq 0 ]; then
     min=1024
     max=64512
+else
+    min=$1
+    max=$2
 fi
 
 # Generate a random number between 1024 and 65535
-random_port=$(( RANDOM % max + min ))
+random_port=$(( RANDOM % $max + $min ))
 
 echo "🌐 Random Port: $random_port"
