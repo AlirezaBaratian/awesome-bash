@@ -3,7 +3,7 @@
 echo "We are about to backup current state of the MongoDB database"
 sleep 1
 
-backup_dir="/var/lib/mongodb_backup"
+backup_dir="/var/lib/mongodb-backup"
 backup_filename="mongodb_backup_$(date +%Y%m%d).tar.xz"
 
 mkdir -p $backup_dir
