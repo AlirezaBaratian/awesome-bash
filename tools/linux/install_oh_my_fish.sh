@@ -1,3 +1,7 @@
-#1/bin/bash
+#!/usr/bin/env fish
 
-curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+function main() {
+    curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+}
+
+main

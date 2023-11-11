@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-echo "We're going to install mosh..."
-sleep 3
-sudo apt update
-sudo apt install -y mosh
+function main() {
+    echo "We're going to install mosh..."
+    sleep 3
+    sudo apt update
+    sudo apt install -y mosh
 
-echo "✅ Successfully installed mosh on your machie."
+    echo "✅ Successfully installed mosh on your machie."
+}
+
+main
