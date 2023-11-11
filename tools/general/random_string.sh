@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
-clear
-echo "✂️ Random string generator"
+function main() {
+    clear
+    echo "✂️ Random string generator"
+    read -p "Enter the length of the random string: " length
 
-# Prompt the user for the length of the random string
-read -p "Enter the length of the random string: " length
+    random_string=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w "$length" | head -n 1)
+    echo "🧵 Random String: $random_string"
+}
 
-# Generate a random string of the specified length
-random_string=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w "$length" | head -n 1)
-
-# Print the random string
-echo "🧵 Random String: $random_string"
+main()
