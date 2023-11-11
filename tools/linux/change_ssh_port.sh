@@ -11,4 +11,4 @@ Here is the result:
 service sshd status
 }
 
-main()
+main

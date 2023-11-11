@@ -9,4 +9,4 @@ function main() {
     echo "🎲 Random number: $random_num"
 }
 
-main()
+main

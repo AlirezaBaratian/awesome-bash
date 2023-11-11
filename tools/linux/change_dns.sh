@@ -9,4 +9,4 @@ function main() {
     echo "✅Nameserver updated to $nameserver"
 }
 
-main()
+main

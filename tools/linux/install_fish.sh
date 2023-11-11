@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-clear
-echo "🐠 Installing fish shell..."
+function main() {
+    clear
+    echo "🐠 Installing fish shell..."
 
-sudo apt-add-repository ppa:fish-shell/release-3
-sudo apt update
-sudo apt install fish -y
+    echo "yes" | sudo apt-add-repository ppa:fish-shell/release-3
+    sudo apt update
+    sudo apt install fish -y
+}
+
+main

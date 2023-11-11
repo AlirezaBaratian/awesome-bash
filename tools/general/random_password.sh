@@ -29,4 +29,4 @@ function main() {
     echo "🔥 Your Random Password: $random_password"   
 }
 
-main()
+main

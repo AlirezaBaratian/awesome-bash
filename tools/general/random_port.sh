@@ -14,4 +14,4 @@ function main() {
     echo "🌐 Random Port: $random_port"
 }
 
-main()
+main

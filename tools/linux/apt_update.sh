@@ -21,3 +21,5 @@ function main() {
     apt update
     apt upgrade -y
 }
+
+main

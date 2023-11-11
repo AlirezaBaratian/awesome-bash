@@ -7,4 +7,4 @@ function main() {
     sudo iptables -t nat -A PREROUTING -p tcp --dport "$listening_port" -j REDIRECT --to-port "$local_port"
 }
 
-main()
+main

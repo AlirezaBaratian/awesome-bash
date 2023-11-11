@@ -12,4 +12,4 @@ function main() {
     echo "$passwrod\n$passwrod" | passwd $name
 }
 
-main()
+main

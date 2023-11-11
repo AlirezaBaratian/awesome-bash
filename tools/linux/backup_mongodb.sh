@@ -16,4 +16,4 @@ function main() {
     echo "Done ✅"
 }
 
-main()
+main
