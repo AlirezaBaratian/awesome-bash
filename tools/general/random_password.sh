@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Function to generate a random string of given length
 generate_random_string() {
     local length=$1
     local charset=$2
