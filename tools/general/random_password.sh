@@ -15,22 +15,19 @@ generate_random_string() {
     echo "$str"
 }
 
-clear
-echo "💪🏼🔐 Strong Password Generator"
-# Prompt the user for the password length
-read -p "📏 Enter the password length: " password_length
+function main() {
+    clear
+    echo "💪🏼🔐 Strong Password Generator"
+    read -p "📏 Enter the password length: " password_length
 
-# Define the character sets for different types of characters
-lowercase_chars="abcdefghijklmnopqrstuvwxyz"
-uppercase_chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-numeric_chars="0123456789"
-special_chars="!@#$%^&*()_+-=[]{}|;:,.<>?~"
+    lowercase_chars="abcdefghijklmnopqrstuvwxyz"
+    uppercase_chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    numeric_chars="0123456789"
+    special_chars="!@#$%^&*()_+-=[]{}|;:,.<>?~"
 
-# Combine all character sets to form the final charset
-charset="$lowercase_chars$uppercase_chars$numeric_chars$special_chars"
+    charset="$lowercase_chars$uppercase_chars$numeric_chars$special_chars"
+    random_password=$(generate_random_string "$password_length" "$charset")
+    echo "🔥 Your Random Password: $random_password"   
+}
 
-# Generate the random password
-random_password=$(generate_random_string "$password_length" "$charset")
-
-# Output the random password
-echo "🔥 Your Random Password: $random_password"
+main()
