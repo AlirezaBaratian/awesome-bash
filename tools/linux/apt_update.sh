@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
 
-clear
-echo "🔥 This script updates your package manager,
-Upgrades the packages,
-And reboots the system if the kernel was also upgraded."
+function check_kernel() {
+    current_kernel=$(uname -r)
+    latest_kernel=$(dpkg -l | awk '/linux-image-[0-9]/{print $2}' | sort -V | tail -n 1 | cut -d'-' -f3-)
 
-sleep 3
+    if [ "$current_kernel" != "$latest_kernel" ]; then
+        echo "🔄 Kernel has been updated. Now, rebooting..."
+        reboot
+    else
+        echo "😀 Kernel is up to date. No need to reboot."
+    fi
+}
 
-current_kernel=$(uname -r)
+function main() {
+    clear
+    echo "Upgrading apt package and Rebooting the system if there was a kernel change... 🔥"
 
-apt update
+    sleep 3
 
-apt upgrade -y
-
-latest_kernel=$(dpkg -l | awk '/linux-image-[0-9]/{print $2}' | sort -V | tail -n 1 | cut -d'-' -f3-)
-
-if [ "$current_kernel" != "$latest_kernel" ]; then
-    echo "🔄 Kernel has been updated. Now, rebooting..."
-    reboot
-else
-    echo "😀 Kernel is up to date. No need to reboot."
-fi
+    apt update
+    apt upgrade -y
+}
