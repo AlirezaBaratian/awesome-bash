@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-function generate_random_number() {
+function main() {
     local min=$1
     local min=$2
 
@@ -9,4 +9,4 @@ function generate_random_number() {
     echo "🎲 Random number: $random_num"
 }
 
-generate_random_number()
+main()
