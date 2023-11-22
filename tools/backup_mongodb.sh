@@ -10,10 +10,10 @@ function main() {
     cd "$backup_dir"
 
     backup_filename="mongodb_backup_$(date +%Y%m%d).tar.xz"
-    
+
     mongodump --out "dump"
     tar -cvJf "$backup_filename" "dump"
-    rm -rf "$dump"
+    rm -rf dump
 
     echo "Done ✅"
 }
