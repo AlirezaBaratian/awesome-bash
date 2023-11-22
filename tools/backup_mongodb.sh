@@ -5,10 +5,12 @@ function main() {
     sleep 1
 
     backup_dir="/var/lib/mongodb-backup"
-    backup_filename="mongodb_backup_$(date +%Y%m%d).tar.xz"
 
-    mkdir -p $backup_dir
-    cd backup_dir
+    mkdir -p "$backup_dir"
+    cd "$backup_dir"
+
+    backup_filename="mongodb_backup_$(date +%Y%m%d).tar.xz"
+    
     mongodump --out "dump"
     tar -cvJf "$backup_filename" "dump"
     rm -rf "$dump"
