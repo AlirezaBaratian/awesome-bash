@@ -20,6 +20,7 @@ function main() {
 
     apt update
     apt upgrade -y
+    check_kernel
 }
 
 main
