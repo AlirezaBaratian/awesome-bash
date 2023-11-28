@@ -12,8 +12,9 @@ function main() {
     nvm install v16.18.1
     source ~/.bashrc
 
-    # Install pm2
+    # Set up pm2
     npm install -g pm2
+    pm2 startup
 }
 
 main
