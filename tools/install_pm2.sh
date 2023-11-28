@@ -12,9 +12,6 @@ function main() {
     # Install nodejs v16.18.1
     nvm install v16.18.1
 
-    # Update npm
-    npm install -g npm
-
     # Install pm2
     npm install -g pm2
 }
