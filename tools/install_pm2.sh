@@ -10,6 +10,7 @@ function main() {
     
     # Install nodejs v16.18.1
     nvm install v16.18.1
+    source ~/.bashrc
 
     # Install pm2
     npm install -g pm2
