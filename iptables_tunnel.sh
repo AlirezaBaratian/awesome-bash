@@ -13,8 +13,6 @@ function main() {
     sudo iptables -t nat -A POSTROUTING -j MASQUERADE
 
     sudo iptables -t nat -A PREROUTING -p tcp --dport $port -j DNAT --to-destination $ip_address:$port
-
-    echo "Now forwarding packets on ports 80 and 443 to $ip_address"
 }
 
 main
