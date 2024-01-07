@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
 function main() {
-   clear
-   echo "This script installs and configures MongoDB 6.0 on your 22.04 Ubuntu..."
-   sleep 2
-
    sudo apt-get install gnupg curl
    curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
       sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
@@ -21,9 +17,8 @@ function main() {
    echo "mongodb-mongosh hold" | sudo dpkg --set-selections
    echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
    echo "mongodb-org-tools hold" | sudo dpkg --set-selections
-
+   
    sudo systemctl start mongod
-   sudo systemctl status mongod
    sudo systemctl enable mongod
 }
 

@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 function main() {
-    clear
-    echo "IR to * Tunnel Script"
     read -p "Enter your foreign server IP address: " ip_address
     read -p "Enter your desired port: " port
 

@@ -15,9 +15,8 @@ generate_random_string() {
 }
 
 function main() {
-    clear
-    echo "💪🏼🔐 Strong Password Generator"
-    read -p "📏 Enter the password length: " password_length
+    echo "Strong Password Generator"
+    read -p "Enter the password length: " password_length
 
     lowercase_chars="abcdefghijklmnopqrstuvwxyz"
     uppercase_chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -26,7 +25,7 @@ function main() {
 
     charset="$lowercase_chars$uppercase_chars$numeric_chars$special_chars"
     random_password=$(generate_random_string "$password_length" "$charset")
-    echo "🔥 Your Random Password: $random_password"   
+    echo "Your Random Password: $random_password"   
 }
 
 main

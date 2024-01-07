@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 function main() {
-    echo "We're going to install download and speedtest binaries on /usr/local/bin. 🛖"
+    echo "Installing speedtest for your debian-based machine..."
+    sleep 1
 
-    wget https://install.speedtest.net/app/cli/ookla-speedtest-1.2.0-linux-x86_64.tgz
-    tar -xvzf ookla-speedtest-1.2.0-linux-x86_64.tgz
-    chmod +x speedtest
-    mv speedtest /usr/local/bin/
+    sudo apt-get install curl
+    curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+    sudo apt-get install speedtest
 
-    echo "Done! ✅"
+    echo "✅ Successfully installed speedtest on your server."
 }
 
 main

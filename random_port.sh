@@ -11,7 +11,7 @@ function main() {
 
     random_port=$(( RANDOM % $max + $min ))
 
-    echo "🌐 Random Port: $random_port"
+    echo "Random Port: $random_port"
 }
 
 main

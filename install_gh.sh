@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 function main() {
-    echo "Installing GitHub CLI on your debian..."
-    sleep 2
-
     type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
     curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
     && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \

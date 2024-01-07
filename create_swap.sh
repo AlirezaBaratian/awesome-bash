@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 function main() {
-    echo "This script allocates a swap partition and makes it persistant after reboots. "
     read -p "How much swap amount do you want? (GB): " amount
 
     sudo fallocate -l ${amount}G /swapfile
@@ -18,8 +17,6 @@ function main() {
 
     sudo cp /etc/fstab /etc/fstab.bak
     echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-
-    echo "✅ Done!"
 }
 
 main
